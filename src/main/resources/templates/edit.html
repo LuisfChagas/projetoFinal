@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Block & CIA -  Editar Produto</title>
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/style.css">
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container text-center">
+		<h1>Editar produto</h1>
+		<br />
+			<div class="row">
+			<div class="col-4"></div>
+			<div class="col-4">
+		<form action="#" th:action="@{/save}" th:object="${product}"
+			method="post">
+			<table border="0" cellpadding="10">
+				<tr>
+					<td>Produto ID:</td>
+					<td><input class="form-control" type="text" th:field="*{id}" readonly="readonly" />
+					</td>
+				</tr>
+
+				<tr>
+					<td>Nome do Produto:</td>
+					<td><input class="form-control" type="text" th:field="*{nome}" /></td>
+				</tr>
+
+				<tr>
+					<td>Marca:</td>
+					<td><input class="form-control" type="text" th:field="*{brand}" /></td>
+				</tr>
+
+				<tr>
+					<td>Made In:</td>
+					<td><input class="form-control" type="text" th:field="*{madein}" /></td>
+				</tr>
+
+				<tr>
+					<td>Preço:</td>
+					<td><input class="form-control" type="text" th:field="*{price}" /></td>
+				</tr>
+				<tr>
+
+				</tr>
+			</table>
+			<br>
+					<button class="btn btn-outline-success form-control bcadastro" type="submit">Salvar</button>
+					<a href="/lista" id="lista" class="btn btn-outline-success form-control bcadastro">Voltar</a>
+					
+		</form>
+		</div>
+	
+	</div>
+</body>
+</html>

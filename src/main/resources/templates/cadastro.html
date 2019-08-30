@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<html>
+<head>
+<meta charset="utf-8">
+<title>Block & CIA - Cadastrar</title>
+</head>
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/style.css">
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.js"></script>
+<body>
+	<div class="container text-center">
+	<h1>Cadastre um novo produto</h1>
+	<div class="row">
+	<div class="col-4"></div>
+			<div class="col-4">
+		<form action="/save" method="post">
+			
+			<p class="cadastro">Name:</p>
+			<input class="form-control" type="text" name="nome" id="nome">
+			<p class="cadastro">Brand:</p>
+			<input class="form-control" type="text" name="brand" id="brand">
+			<p class="cadastro">Made In:</p>
+			<input class="form-control" type="text" name="madein" id="madein">
+			<p class="cadastro">Price:</p>
+			<input class="form-control" type="number" name="price" id="price"> 
+			<br>
+			<input class="btn btn-outline-success form-control bcadastro"  type="submit" value="Cadastrar" id="submit">
+			<a href="/lista" id="lista" class="btn btn-outline-success form-control bcadastro">Voltar</a>
+			
+		</form>
+		</div>
+			<div class="col-4"></div>
+	</div>
+</div>
+</body>
+</html>
